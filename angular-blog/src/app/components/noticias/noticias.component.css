@@ -1,13 +1,26 @@
 .card-noticias{
-    width: 100%;
+    width: 500px;
+    height: 500px;
     margin-right: 20px;
-}
+    min-width: 400px;
+    flex: 0 0 auto;
+    overflow: hidden;
 
-.noticias_img{
-    width: 100%;
+}
+.noticias_img img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .noticias_text{
-    display: flex;
+    white-space: normal;
 }
 
+.noticias_text h1 a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+
+}

@@ -11,7 +11,7 @@ export class MenuTitleComponent {
   @Input()
   photoCover:string =""
   @Input()
-  cardTitle:string ="SOLO LEVELING VENCEDOR DO ANIME AWARDS 2025"
+  cardTitle:string =""
   @Input()
   cardDescription:string =""
 

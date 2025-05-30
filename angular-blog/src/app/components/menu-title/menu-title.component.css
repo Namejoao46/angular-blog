@@ -8,29 +8,33 @@
 }
 
 .title-noticia{
+    width: 500px;
     position: absolute; /* Permite posicionamento dentro do .banner */
     left: 10px; /* Distância da borda esquerda */
     bottom: 120px; /* Distância da borda inferior */
     color: white; /* Mantém o texto visível */
     font-size: 32px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.3); /* Fundo semitransparente para melhor contraste */
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo semitransparente para melhor contraste */
     padding: 10px;
-    border-radius: 100px;
+    border-radius: 100px; 
 
+}
+.title-noticia a, .text a{
+    text-decoration: none !important;
+    color: white !important;
 }
 
 .text{
+    width: 500px;
     color: white;
     position: absolute; /* Permite posicionamento dentro do .banner */
     left: 10px; /* Distância da borda esquerda */
-    bottom: 80px; /* Distância da borda inferior */
+    top: 460px; /* Distância da borda inferior */
     font-size: 20px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.1); /* Fundo semitransparente para melhor contraste */
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo semitransparente para melhor contraste */
     padding: 10px;
     border-radius: 100px;
-    
 
 }
-
