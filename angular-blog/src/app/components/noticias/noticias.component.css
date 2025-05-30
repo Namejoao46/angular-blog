@@ -1,0 +1,13 @@
+.card-noticias{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.noticias_img{
+    width: 100%;
+}
+
+.noticias_text{
+    display: flex;
+}
+

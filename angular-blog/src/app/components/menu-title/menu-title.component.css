@@ -1,0 +1,36 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 1510px;
+    position: relative; /* Necessário para que o texto fique posicionado corretamente */
+}
+
+.title-noticia{
+    position: absolute; /* Permite posicionamento dentro do .banner */
+    left: 10px; /* Distância da borda esquerda */
+    bottom: 120px; /* Distância da borda inferior */
+    color: white; /* Mantém o texto visível */
+    font-size: 32px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3); /* Fundo semitransparente para melhor contraste */
+    padding: 10px;
+    border-radius: 100px;
+
+}
+
+.text{
+    color: white;
+    position: absolute; /* Permite posicionamento dentro do .banner */
+    left: 10px; /* Distância da borda esquerda */
+    bottom: 80px; /* Distância da borda inferior */
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.1); /* Fundo semitransparente para melhor contraste */
+    padding: 10px;
+    border-radius: 100px;
+    
+
+}
+
