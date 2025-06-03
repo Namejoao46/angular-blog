@@ -1,48 +1,129 @@
 
 <header>
+    <div>
+        <app-menu-bar
+        photoLogo="https://i.postimg.cc/Nf5Tzz6x/Anime-No-Kisetsu.png"
+        nomeSite="Anime no Kisetsu"
+        ></app-menu-bar>
+    </div>
+
+    <div class="menu-bar-itens">
+        <app-menu-bar
+            buttom="HOME"
+        ></app-menu-bar>
+        <app-menu-bar
+            buttom="COMUNIDADE"
+        ></app-menu-bar>
+        <app-menu-bar
+            buttom="CONTATO"
+        ></app-menu-bar>
+    </div>
+
+    <div class="menu-bar">
+        <app-menu-bar
+            link ="https://bing.com/search?q=GitHub+profile+namejoao46"
+            img ="https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF"
+            nomeLogo ="GitHub"
+        ></app-menu-bar>
+        <app-menu-bar
+            link="www.linkedin.com/in/joaopauloavs"
+            img="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF"
+            nomeLogo="Linkedin"
+        ></app-menu-bar>
+        <app-menu-bar
+            link="mailto:paulo.joao.avs@gmail.com"
+            img="https://img.icons8.com/?size=100&id=38158&format=png&color=FFFFFF"
+            nomeLogo="Gmail"
+        ></app-menu-bar>
+    </div>
     <app-menu-bar></app-menu-bar>
 </header>
 
 <app-menu-title 
 photoCover="https://wallpapercave.com/wp/wp6183530.png" 
+cardName="SOLO LEVELING" 
+cardData="02 JUN 2025"
 cardTitle="SOLO LEVELING VENCEDOR DO ANIME AWARDS 2025"
 cardDescription="Solo Leveling foi o grande vencedor, superando Frieren e a Jornada para o Além, Diários de uma Apotecária e Dandadan. Conquistou o público com sua animação de alta qualidade e história envolvente"
 >
 </app-menu-title>
 
-<h1>NEWS ANIME AWARDS</h1>
-<div class="news__rolante">
-    <app-noticias
-        photoCover="https://th.bing.com/th/id/OIP.nyTELxvGrYkIM-1mfbGvqQHaDe?rs=1&pid=ImgDetMain"
-        cardDescription="🎥 Filme do Ano – Look Back levou o prêmio, competindo com Haikyuu!! The Dumpster Battle e SPY x FAMILY CODE: White"
-    ></app-noticias>
-    <app-noticias
-        photoCover="https://static.animecorner.me/2023/09/1694329986-30086.jpg"
-        cardDescription="🔥 Melhor Anime de Ação – Solo Leveling Com cenas de luta incríveis e uma narrativa eletrizante, Solo Leveling dominou essa categoria."
-    ></app-noticias>
-    <app-noticias
-        photoCover="https://external-preview.redd.it/frieren-beyond-journeys-end-hiatus-announced-v0-zbFYqE_yjXjrZLXQG-u_YZd_54kuVBWUQaQbtK951a0.jpg?auto=webp&s=1b95c8b72f6d57f39dbd4af94df990c9bb32cb35"
-        cardDescription="🎭 Melhor Anime de Drama – Frieren e a Jornada para o Além Uma história profunda e tocante sobre a passagem do tempo e a importância das memórias."
-    ></app-noticias>
-    <app-noticias
-        photoCover="https://asetto.nawalakarsa.id/imeji/20240318084455/00-6.jpg"
-        cardDescription="💖 Melhor Anime de Romance – Blue Box Mistura romance e esportes, trazendo uma narrativa leve e envolvente."
-    ></app-noticias>
-    <app-noticias
-        photoCover="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/07/delicious-in-dungeon_a-dungeon-dinner.jpg"
-        cardDescription="😂 Melhor Anime de Comédia – Delicious in Dungeon Combinando humor e aventura, este anime conquistou os fãs com sua abordagem única."
-    ></app-noticias>
-    <app-noticias
-        photoCover="https://i.pinimg.com/originals/be/35/b1/be35b12efdcb47e2c18d98f9e4cb5595.jpg"
-        cardDescription="🎶 Melhor Música de Anime – Otonoke, de Creepy Nuts (Dandadan) Uma trilha sonora marcante que complementa perfeitamente a atmosfera do anime."
-    ></app-noticias>
-    <app-noticias
-        photoCover="https://th.bing.com/th/id/OIP.m6ld39B05pazc26vk4xFzgHaEK?rs=1&pid=ImgDetMain"
-        cardDescription="🎨 Melhor Animação – Demon Slayer: Kimetsu no Yaiba – Hashira Training Arc Reconhecido pela qualidade visual impecável e fluidez das cenas de ação."
-    ></app-noticias>
-    <app-noticias
-        photoCover="https://staticg.sportskeeda.com/editor/2024/01/b0f61-17050803861897-1920.jpg"
-        cardDescription="👤 Melhor Personagem Principal – Frieren (Frieren e a Jornada para o Além) Uma protagonista cativante que conduz uma jornada emocionante e reflexiva."
-    ></app-noticias>
+<div class="titulo-news">
+    <h1>NEWS ANIME AWARDS</h1>
+</div>
+    <div class="botoes-categorias">
+        <button (click)="filtrarNoticias('')" class="categoria-todos">TODOS</button>
+        <button (click)="filtrarNoticias('1')" class="categoria-anime">ANIME</button>
+        <button (click)="filtrarNoticias('2')" class="categoria-manga">MANGA</button>
+        <button (click)="filtrarNoticias('3')" class="categoria-gamer">GAMER</button>
+    </div>
+<div class="news-container">
 
+    <button (click)="scrollLeft()" class="buttom-ante">←</button>
+    <div #newsRolante class="news__rolante">
+        <app-noticias
+            photoCover="https://th.bing.com/th/id/OIP.nyTELxvGrYkIM-1mfbGvqQHaDe?rs=1&pid=ImgDetMain"
+            cardName="BLUE LOCK"
+            cardData="02 JUN 2025"
+            cardCategory="1"
+            cardDescription="🎥 Filme do Ano – Look Back levou o prêmio, competindo com Haikyuu!! The Dumpster Battle e SPY x FAMILY CODE: White"
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://static.animecorner.me/2023/09/1694329986-30086.jpg"
+            cardName="SOLO LEVELING"
+            cardData="02 JUN 2025"
+            cardCategory="3"
+            cardDescription="🔥 Melhor Anime de Ação – Solo Leveling Com cenas de luta incríveis e uma narrativa eletrizante, Solo Leveling dominou essa categoria."
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://external-preview.redd.it/frieren-beyond-journeys-end-hiatus-announced-v0-zbFYqE_yjXjrZLXQG-u_YZd_54kuVBWUQaQbtK951a0.jpg?auto=webp&s=1b95c8b72f6d57f39dbd4af94df990c9bb32cb35"
+            cardName="FRIEREN"
+            cardData="02 JUN 2025"
+            cardCategory="2"
+            cardDescription="🎭 Melhor Anime de Drama – Frieren e a Jornada para o Além Uma história profunda e tocante sobre a passagem do tempo e a importância das memórias."
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://asetto.nawalakarsa.id/imeji/20240318084455/00-6.jpg"
+            cardName="BLUE BOX"
+            cardData="02 JUN 2025"
+            cardCategory="2"
+            cardDescription="💖 Melhor Anime de Romance – Blue Box Mistura romance e esportes, trazendo uma narrativa leve e envolvente."
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/07/delicious-in-dungeon_a-dungeon-dinner.jpg"
+            cardName="DELICIOUS IN DUNGEON"
+            cardData="02 JUN 2025"
+            cardCategory="2"
+            cardDescription="😂 Melhor Anime de Comédia – Delicious in Dungeon Combinando humor e aventura, este anime conquistou os fãs com sua abordagem única."
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://i.pinimg.com/originals/be/35/b1/be35b12efdcb47e2c18d98f9e4cb5595.jpg"
+            cardName="DANDADAN"
+            cardData="02 JUN 2025"
+            cardCategory="1"
+            cardDescription="🎶 Melhor Música de Anime – Otonoke, de Creepy Nuts (Dandadan) Uma trilha sonora marcante que complementa perfeitamente a atmosfera do anime."
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://th.bing.com/th/id/OIP.m6ld39B05pazc26vk4xFzgHaEK?rs=1&pid=ImgDetMain"
+            cardName="KIMETSU NO YAIBA"
+            cardData="02 JUN 2025"
+            cardCategory="1"
+            cardDescription="🎨 Melhor Animação – Demon Slayer: Kimetsu no Yaiba – Hashira Training Arc Reconhecido pela qualidade visual impecável e fluidez das cenas de ação."
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://staticg.sportskeeda.com/editor/2024/01/b0f61-17050803861897-1920.jpg"
+            cardName="FRIEREN"
+            cardData="02 JUN 2025"
+            cardCategory="1"
+            cardDescription="👤 Melhor Personagem Principal – Frieren (Frieren e a Jornada para o Além) Uma protagonista cativante que conduz uma jornada emocionante e reflexiva."
+        ></app-noticias>
+        <app-noticias
+            photoCover="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/07/delicious-in-dungeon_a-dungeon-dinner.jpg"
+            cardName="DELICIOUS IN DUNGEON"
+            cardData="02 JUN 2025"
+            cardCategory="3"
+            cardDescription="😂 Melhor Anime de Comédia – Delicious in Dungeon Combinando humor e aventura, este anime conquistou os fãs com sua abordagem única."
+        ></app-noticias>
+    </div>
+    <button (click)="scrollRight()" class="buttom-prox">→</button>
 </div>

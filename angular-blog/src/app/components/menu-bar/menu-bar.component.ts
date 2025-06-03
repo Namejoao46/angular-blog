@@ -1,11 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
   imports: [],
   templateUrl: './menu-bar.component.html',
-  styleUrl: './menu-bar.component.css'
+  styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent {
+ 
+  @Input()
+  photoLogo:string =""
+
+  @Input()
+  buttom:string =""
+
+  @Input()
+  nomeSite:string =""
+
+  @Input()
+  link:string =""
+
+  @Input()
+  img:string =""
+
+  @Input()
+  nomeLogo:string =""
+
+  constructor(){
+
+  }
+
+  ngOnInit(): void{
+
+  }
 
 }

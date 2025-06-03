@@ -11,6 +11,10 @@ export class NoticiasComponent {
   @Input()
   photoCover:string =""
   @Input()
+  cardName:string =""
+  @Input()
+  cardData:string =""
+  @Input()
   cardDescription:string =""
   
 

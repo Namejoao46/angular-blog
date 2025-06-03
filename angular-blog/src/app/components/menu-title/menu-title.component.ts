@@ -11,6 +11,10 @@ export class MenuTitleComponent {
   @Input()
   photoCover:string =""
   @Input()
+  cardName:string =""
+  @Input()
+  cardData:string =""
+  @Input()
   cardTitle:string =""
   @Input()
   cardDescription:string =""
