@@ -2,12 +2,14 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { MenuTitleComponent } from "../../components/menu-title/menu-title.component";
 import { MenuBarComponent } from "../../components/menu-bar/menu-bar.component";
 import { NoticiasComponent } from "../../components/noticias/noticias.component";
+import { NoticiasVerticalComponent } from '../../components/noticias-vertical/noticias-vertical.component';
+
 
 @Component({
   selector: 'app-home',
-  imports: [MenuTitleComponent, MenuBarComponent, NoticiasComponent],
+  imports: [MenuTitleComponent, MenuBarComponent, NoticiasComponent, NoticiasVerticalComponent ],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements AfterViewInit { // Adiciona AfterViewInit para executar código após a exibição do componente
   @ViewChild('newsRolante', { static: false }) newsRolante!: ElementRef; // Obtém uma referência ao contêiner das notícias rolantes no DOM

@@ -2,7 +2,7 @@
 /* Define o tamanho do card de notícias */
 .card-noticias{
     width: 485px;
-    height: 500px;
+    height: 400px;
     min-width: 300px;
 }
 
