@@ -14,6 +14,7 @@ h1, a, p{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     box-sizing: border-box;
+    position: relative;
 }
 
 .news img {
@@ -28,7 +29,10 @@ h1, a, p{
     flex: 1;
     overflow: hidden;
 }
-
+.news_text h1{
+    margin-bottom: 5px;
+    flex-grow: 1;
+}
 .news h1 {
     margin: 0;
     color: white;
@@ -38,17 +42,22 @@ h1, a, p{
 }
 
 .info{
+    position: absolute;
+    bottom: 20px;
     display: flex;
     font-weight: bold;
     font-size: 16px;
+    width: calc(100% - 30px);
 }
 
 .name{
     background: rgba(255, 255, 255, 0.2);
     font-size: 12px;
     border-radius: 5px;
+    width: 130px;
+    overflow-wrap: break-word;
     padding: 5px;
-    color: white; 
+    color: white;
 }
 
 /*Estilização da data*/
